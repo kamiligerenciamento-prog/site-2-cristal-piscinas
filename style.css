@@ -514,4 +514,206 @@ ul { list-style: none; }
     max-width: 220px;
     object-fit: contain;
     display: block;
+}/* =======================================================
+   RESPONSIVIDADE COMPLETA
+======================================================= */
+
+/* Monitores grandes */
+@media (min-width: 1600px){
+
+    .container{
+        max-width:1400px;
+    }
+
+    .hero__title{
+        font-size:68px;
+    }
+
+    .hero__desc{
+        font-size:20px;
+    }
+
+}
+
+/* Notebook */
+@media (max-width:1200px){
+
+    .container{
+        padding:0 25px;
+    }
+
+    .models__grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+    }
+
+    .works__grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .features__inner{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer__grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* Tablet */
+@media (max-width:991px){
+
+    .burger{
+        display:flex;
+    }
+
+    .nav{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#081226;
+        flex-direction:column;
+        align-items:center;
+        padding:20px 0;
+        gap:20px;
+    }
+
+    .nav.is-open{
+        display:flex;
+    }
+
+    .btn--pill{
+        display:none;
+    }
+
+    .hero{
+        padding-top:120px;
+    }
+
+    .hero__content{
+        text-align:center;
+    }
+
+    .hero__text{
+        max-width:100%;
+    }
+
+    .hero__desc{
+        max-width:100%;
+    }
+
+    .hero__actions{
+        justify-content:center;
+    }
+
+    .hero__badges{
+        justify-content:center;
+    }
+
+    .testimonials__track{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* Celular */
+@media (max-width:768px){
+
+    .container{
+        padding:0 18px;
+    }
+
+    .logo__img{
+        height:70px;
+    }
+
+    .hero__title{
+        font-size:38px;
+        line-height:1.2;
+    }
+
+    .hero__desc{
+        font-size:15px;
+    }
+
+    .hero__actions{
+        flex-direction:column;
+    }
+
+    .hero__actions .btn{
+        width:100%;
+    }
+
+    .hero__badges{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .features__inner{
+        grid-template-columns:1fr;
+        padding:25px;
+    }
+
+    .models__grid{
+        grid-template-columns:1fr;
+    }
+
+    .works__grid{
+        grid-template-columns:1fr;
+    }
+
+    .works__item{
+        height:250px;
+    }
+
+    .footer__grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer__bottom{
+        text-align:center;
+        flex-direction:column;
+    }
+
+}
+
+/* Celulares pequenos */
+@media (max-width:480px){
+
+    .hero__title{
+        font-size:30px;
+    }
+
+    .hero__desc{
+        font-size:14px;
+    }
+
+    .btn{
+        padding:14px;
+        font-size:14px;
+    }
+
+    .model-card__content h3{
+        font-size:22px;
+    }
+
+    .section-title{
+        font-size:28px;
+    }
+
+    .works__item{
+        height:220px;
+    }
+
+    .whatsapp-float{
+        width:55px;
+        height:55px;
+        right:15px;
+        bottom:15px;
+    }
+
 }
